@@ -1,0 +1,32 @@
+body{
+  background-color: #222222;
+}
+.wrapper{
+position: absolute;
+height: 100%;
+width: 100%;
+overflow: hidden;
+display: flex;
+flex-wrap: wrap;
+}
+.object{
+  background-color: transparent;
+  transition-duration: 2s;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  animation: color 4s linear infinite;
+}
+@keyframes color{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.object:hover{
+  background-color: gold;
+  box-shadow: 0px 0px 30px gold;
+  transition-duration: 0s;
+}
